@@ -249,5 +249,17 @@
             </plugin>
         </plugins>
     </reporting>
+    
+    <profiles>
+    	<profile>
+    		<id>xgbi-internal</id>
+    		<repositories>
+    			<repository>
+    				<id>xgbi-internal</id>
+    				<url>http://maven.xgbi.fr/content/groups/public/</url>
+    			</repository>
+    		</repositories>
+    	</profile>
+    </profiles>
 </project>
 
