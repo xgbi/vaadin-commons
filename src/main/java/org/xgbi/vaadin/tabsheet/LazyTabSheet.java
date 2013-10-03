@@ -15,8 +15,8 @@ import com.vaadin.ui.TabSheet.SelectedTabChangeListener;
 
 /**
  * A {@link TabSheet} loading component only on selection. The selectedTab is
- * the one added by calling {@link LazyTabsheet#addNoLazyTab(String)} or
- * {@link LazyTabsheet#addNoLazyTab(String, Resource)}.
+ * the one added by calling {@link LazyTabSheet#addNoLazyTab(String)} or
+ * {@link LazyTabSheet#addNoLazyTab(String, Resource)}.
  * 
  * FIXME: Rewrite to not being able to add tab from there but using the Factory
  * 
@@ -24,7 +24,7 @@ import com.vaadin.ui.TabSheet.SelectedTabChangeListener;
  * @author Vincent Demeester
  * 
  */
-public class LazyTabsheet extends TabSheet implements SelectedTabChangeListener {
+public class LazyTabSheet extends TabSheet implements SelectedTabChangeListener {
 
 	private static final long serialVersionUID = -8720216985546412778L;
 	
@@ -32,7 +32,7 @@ public class LazyTabsheet extends TabSheet implements SelectedTabChangeListener 
 	 * A {@link TabSheet} that loads the component on demand, see
 	 * {@link SelectedTabChangeListener}
 	 */
-	public LazyTabsheet() {
+	public LazyTabSheet() {
 		super();
 		addListener(this);
 		setSizeFull();
@@ -75,7 +75,7 @@ public class LazyTabsheet extends TabSheet implements SelectedTabChangeListener 
 	}
 
 	public static TabSheet fromCollection(Collection<Component> components) {
-		TabSheet tabSheet = new LazyTabsheet();
+		TabSheet tabSheet = new LazyTabSheet();
 		for (Component c : components) {
 			tabSheet.addComponent(c);
 		}

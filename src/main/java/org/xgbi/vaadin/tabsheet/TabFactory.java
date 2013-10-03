@@ -10,7 +10,7 @@ import com.vaadin.ui.TabSheet.Tab;
 
 /**
  * Class to build {@link Tab} and return them to be used by a
- * {@link LazyTabsheet}.
+ * {@link LazyTabSheet}.
  * 
  * @author Houbeb Ben Othmene
  * @author Vincent Demeester
